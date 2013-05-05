@@ -1,0 +1,35 @@
+.hand {
+  cursor: hand;
+  cursor: pointer;
+}
+body {
+  color: #aaaaaa;
+  font-family: Verdana;
+}
+.cont {
+  width: 300px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+h1 {
+  font-size: 25px;
+  color: pink;
+  font-weight: normal;
+}
+h1.total {
+  float: right;
+  border-top: 1px solid;
+  padding: 5px;
+}
+h1.level {
+  border-bottom: 1px solid;
+  padding: 5px;
+}
+ul.numbers {
+  font-size: 50px;
+  list-style-type: none;
+}
+ul.numbers span {
+  cursor: hand;
+  cursor: pointer;
+}
