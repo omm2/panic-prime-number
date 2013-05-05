@@ -1,10 +1,44 @@
-/* App specific Less */
+@color: #AAAAAA;
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
 .hand{
-  cursor: hand; cursor: pointer; 
+  cursor: hand; cursor: pointer;
+}
+body{
+  color:@color;
+  font-family:Verdana;
+}
+.cont{
+  width:300px;
+  margin:10px auto;
+  //.rounded-corners;
+  //border:1px dotted;
+  overflow:hidden;
+}
+h1{
+  font-size: 25px;
+  color: pink;
+  font-weight: normal;
+}
+h1.total{
+  float: right;
+  border-top: 1px solid;
+  padding:5px;
+}
+h1.level{
+  border-bottom: 1px solid;
+  padding:5px;
 }
 ul.numbers{
+  font-size:50px;
   list-style-type: none;
   span{
     .hand
   }
 }
+

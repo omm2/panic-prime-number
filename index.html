@@ -5,19 +5,19 @@
     <title>Panic Prime Number</title>
     <!-- link rel="stylesheet" href="css/vendor-css.min.css" -->
     <link rel="stylesheet" href="static/css/app.css">
-
+    <script type="text/javascript" src="static/js/angular.js"></script>
+    <script type="text/javascript" src="static/js/lodash.js"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
   </head>
   <body>
-    <div ng-controller="PrimeController">
-      <h1>Total Score: <span>{{score}}</span></h1>
+    <div class="cont" ng-controller="PrimeController">
+      <h1 class="level">Level: <span>{{level}}</span></h1>
       <ul class="numbers" ng-repeat="number in numbers">
         <li ng-click="pick(number)" >
           <span class="prime-item">{{number}}</span>
         </li>
       </ul>
+      <h1 class="total">Total Score: <span>{{score}}</span></h1>
     </div>
   </body>
-  <script type="text/javascript" src="static/js/angular.js"></script>
-  <script type="text/javascript" src="static/js/lodash.js"></script>
-  <script type="text/javascript" src="static/js/app.js"></script>
 </html>
